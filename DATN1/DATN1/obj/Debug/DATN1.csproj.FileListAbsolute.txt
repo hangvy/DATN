@@ -1,0 +1,13 @@
+D:\hocki9\doan1\project\DATN1\DATN1\bin\Debug\DATN1.exe.config
+D:\hocki9\doan1\project\DATN1\DATN1\bin\Debug\DATN1.exe
+D:\hocki9\doan1\project\DATN1\DATN1\bin\Debug\DATN1.pdb
+D:\hocki9\doan1\project\DATN1\DATN1\obj\Debug\DATN1.csprojResolveAssemblyReference.cache
+D:\hocki9\doan1\project\DATN1\DATN1\obj\Debug\DATN1.Login.resources
+D:\hocki9\doan1\project\DATN1\DATN1\obj\Debug\DATN1.Main.resources
+D:\hocki9\doan1\project\DATN1\DATN1\obj\Debug\DATN1.Properties.Resources.resources
+D:\hocki9\doan1\project\DATN1\DATN1\obj\Debug\DATN1.csproj.GenerateResource.Cache
+D:\hocki9\doan1\project\DATN1\DATN1\obj\Debug\DATN1.exe
+D:\hocki9\doan1\project\DATN1\DATN1\obj\Debug\DATN1.pdb
+F:\DOANTN\MOCK\DATN1\DATN1\bin\Debug\DATN1.exe.config
+F:\DOANTN\MOCK\DATN1\DATN1\obj\Debug\DATN1.exe
+F:\DOANTN\MOCK\DATN1\DATN1\obj\Debug\DATN1.pdb
