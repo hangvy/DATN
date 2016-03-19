@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.moFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chuanHoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,6 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.pbImageInput = new System.Windows.Forms.PictureBox();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panelEx1.SuspendLayout();
@@ -77,6 +77,13 @@
             this.fileManagerToolStripMenuItem.Name = "fileManagerToolStripMenuItem";
             this.fileManagerToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileManagerToolStripMenuItem.Text = "File";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.openToolStripMenuItem.Text = "Open Image";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // imageManagerToolStripMenuItem
             // 
@@ -108,6 +115,7 @@
             this.uploadToolStripMenuItem1.Name = "uploadToolStripMenuItem1";
             this.uploadToolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
             this.uploadToolStripMenuItem1.Text = "Upload";
+            this.uploadToolStripMenuItem1.Click += new System.EventHandler(this.uploadToolStripMenuItem1_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -126,7 +134,7 @@
             // moFormToolStripMenuItem
             // 
             this.moFormToolStripMenuItem.Name = "moFormToolStripMenuItem";
-            this.moFormToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.moFormToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.moFormToolStripMenuItem.Text = "Mở form mẫu";
             // 
             // formatToolStripMenuItem
@@ -148,18 +156,18 @@
             // helpToolStripMenuItem1
             // 
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
             this.helpToolStripMenuItem1.Text = "OCR Help";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(123, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // toolStrip1
@@ -219,13 +227,6 @@
             this.pbImageInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbImageInput.TabIndex = 0;
             this.pbImageInput.TabStop = false;
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.openToolStripMenuItem.Text = "Open Image";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // Main
             // 
