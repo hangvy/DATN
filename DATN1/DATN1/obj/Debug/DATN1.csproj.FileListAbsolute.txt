@@ -11,3 +11,14 @@ D:\hocki9\doan1\project\DATN1\DATN1\obj\Debug\DATN1.pdb
 F:\DOANTN\MOCK\DATN1\DATN1\bin\Debug\DATN1.exe.config
 F:\DOANTN\MOCK\DATN1\DATN1\obj\Debug\DATN1.exe
 F:\DOANTN\MOCK\DATN1\DATN1\obj\Debug\DATN1.pdb
+F:\DOANTN\DATN1\DATN1\DATN1\bin\Debug\DATN1.exe.config
+F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.exe
+F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.pdb
+F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.csprojResolveAssemblyReference.cache
+F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.Login.resources
+F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.Main.resources
+F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.Properties.Resources.resources
+F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.csproj.GenerateResource.Cache
+F:\DOANTN\DATN1\DATN1\DATN1\bin\Debug\DATN1.exe
+F:\DOANTN\DATN1\DATN1\DATN1\bin\Debug\DATN1.pdb
+F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.FormatForm.resources

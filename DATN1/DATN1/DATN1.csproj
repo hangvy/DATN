@@ -36,11 +36,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Charts.dll</HintPath>
     </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.7.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\DBConnect.cs" />
+    <Compile Include="DAL\Entities\DetailFormEntity.cs" />
+    <Compile Include="DAL\Entities\FormEntity.cs" />
+    <Compile Include="DAL\Entities\ImageEntity.cs" />
+    <Compile Include="DAL\Entities\UserEntity.cs" />
+    <Compile Include="DAL\UserDAL.cs" />
     <Compile Include="DataManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +77,12 @@
     </Compile>
     <Compile Include="FormAnalyst.Designer.cs">
       <DependentUpon>FormAnalyst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormatForm.Designer.cs">
+      <DependentUpon>FormatForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ImageManager.cs">
       <SubType>Form</SubType>
@@ -90,6 +104,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLHelper.cs" />
+    <EmbeddedResource Include="FormatForm.resx">
+      <DependentUpon>FormatForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +140,12 @@
   <ItemGroup>
     <Content Include="img\login.ico" />
     <Content Include="img\login_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BLL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
