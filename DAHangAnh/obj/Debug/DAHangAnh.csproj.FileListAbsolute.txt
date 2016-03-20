@@ -10,3 +10,6 @@ F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\bin\Debug\Google.Apis.dll
 F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\bin\Debug\Google.Apis.Drive.v2.dll
 F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DAHangAnh.exe
 F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DAHangAnh.pdb
+F:\DOANTN\MOCK\DATN1\DAHangAnh\bin\Debug\DAHangAnh.exe.config
+F:\DOANTN\MOCK\DATN1\DAHangAnh\obj\Debug\DAHangAnh.exe
+F:\DOANTN\MOCK\DATN1\DAHangAnh\obj\Debug\DAHangAnh.pdb

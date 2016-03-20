@@ -87,9 +87,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlHelper.cs" />
+    <Compile Include="Ultilities\SqlHelper.cs" />
     <Compile Include="Ultilities\Authentication.cs" />
-    <Compile Include="Ultil\ConnectGoogleDrive.cs" />
+    <Compile Include="Ultilities\ConnectGoogleDrive.cs" />
     <EmbeddedResource Include="FormatForm.resx">
       <DependentUpon>FormatForm.cs</DependentUpon>
     </EmbeddedResource>
