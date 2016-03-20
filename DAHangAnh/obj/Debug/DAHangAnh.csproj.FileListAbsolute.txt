@@ -1,0 +1,12 @@
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\bin\Debug\DAHangAnh.exe.config
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DATN1.FormatForm.resources
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DATN1.Login.resources
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DATN1.Main.resources
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DAHangAnh.Properties.Resources.resources
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DAHangAnh.csproj.GenerateResource.Cache
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\bin\Debug\DAHangAnh.exe
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\bin\Debug\DAHangAnh.pdb
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\bin\Debug\Google.Apis.dll
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\bin\Debug\Google.Apis.Drive.v2.dll
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DAHangAnh.exe
+F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DAHangAnh.pdb
