@@ -46,5 +46,10 @@ namespace DATN1
                 pbImageInput.Image = imgInput;
             }
         }
+
+        private void uploadToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
