@@ -13,3 +13,6 @@ F:\DOANTN\MOCK\DAHangAnh\DAHangAnh\obj\Debug\DAHangAnh.pdb
 F:\DOANTN\MOCK\DATN1\DAHangAnh\bin\Debug\DAHangAnh.exe.config
 F:\DOANTN\MOCK\DATN1\DAHangAnh\obj\Debug\DAHangAnh.exe
 F:\DOANTN\MOCK\DATN1\DAHangAnh\obj\Debug\DAHangAnh.pdb
+D:\git 3\DATN1\DAHangAnh\bin\Debug\DAHangAnh.exe.config
+D:\git 3\DATN1\DAHangAnh\obj\Debug\DAHangAnh.exe
+D:\git 3\DATN1\DAHangAnh\obj\Debug\DAHangAnh.pdb
