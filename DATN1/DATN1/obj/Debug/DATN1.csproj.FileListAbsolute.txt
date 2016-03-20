@@ -22,3 +22,6 @@ F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.csproj.GenerateResource.Cache
 F:\DOANTN\DATN1\DATN1\DATN1\bin\Debug\DATN1.exe
 F:\DOANTN\DATN1\DATN1\DATN1\bin\Debug\DATN1.pdb
 F:\DOANTN\DATN1\DATN1\DATN1\obj\Debug\DATN1.FormatForm.resources
+D:\git\DATN1\DATN1\DATN1\bin\Debug\DATN1.exe.config
+D:\git\DATN1\DATN1\DATN1\obj\Debug\DATN1.exe
+D:\git\DATN1\DATN1\DATN1\obj\Debug\DATN1.pdb
