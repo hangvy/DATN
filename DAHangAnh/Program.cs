@@ -1,4 +1,4 @@
-﻿using DATN1;
+﻿using DAHangAnh;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,7 @@ namespace DAHangAnh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormatForm());
+            Application.Run(new Main());
         }
     }
 }

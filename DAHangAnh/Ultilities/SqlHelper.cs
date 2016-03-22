@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-namespace DATN1
+namespace DAHangAnh
 {
     public class SqlHelper
     {

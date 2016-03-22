@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DATN1.Ultilities
+namespace DAHangAnh.Ultilities
 {
     public class Authentication
     {

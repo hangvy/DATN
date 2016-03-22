@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
-using DATN1.Entity;
-using DATN1.DAL;
+using DAHangAnh.DAL.Entities;
+using DAHangAnh.DAL;
 
-namespace DATN1
+namespace DAHangAnh
 {
     public class UserDAL
     {

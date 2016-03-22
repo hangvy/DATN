@@ -16,3 +16,21 @@ F:\DOANTN\MOCK\DATN1\DAHangAnh\obj\Debug\DAHangAnh.pdb
 D:\git 3\DATN1\DAHangAnh\bin\Debug\DAHangAnh.exe.config
 D:\git 3\DATN1\DAHangAnh\obj\Debug\DAHangAnh.exe
 D:\git 3\DATN1\DAHangAnh\obj\Debug\DAHangAnh.pdb
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\bin\Debug\DAHangAnh.exe.config
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\obj\Debug\DAHangAnh.exe
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\obj\Debug\DAHangAnh.pdb
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\bin\Debug\DAHangAnh.exe
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\bin\Debug\DAHangAnh.pdb
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\bin\Debug\Google.Apis.dll
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\bin\Debug\Google.Apis.Drive.v2.dll
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\obj\Debug\DAHangAnh.csprojResolveAssemblyReference.cache
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\obj\Debug\DAHangAnh.Properties.Resources.resources
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\obj\Debug\DAHangAnh.csproj.GenerateResource.Cache
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\bin\Debug\Google.Apis.Core.dll
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\bin\Debug\Zlib.Portable.dll
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\obj\Debug\DAHangAnh.FormatForm.resources
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\obj\Debug\DAHangAnh.Login.resources
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\obj\Debug\DAHangAnh.Main.resources
+C:\Users\Hang\Desktop\DATN1\DAHangAnh\obj\Debug\DAHangAnh.ManageImage.resources

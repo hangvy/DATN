@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DATN1
+namespace DAHangAnh
 {
     public partial class Login : DevComponents.DotNetBar.Office2007Form
     {

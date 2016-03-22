@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using System.IO;
 
-namespace DATN1
+namespace DAHangAnh
 {
     public partial class Main : DevComponents.DotNetBar.OfficeForm
     {

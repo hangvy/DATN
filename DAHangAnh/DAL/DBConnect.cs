@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DATN1.DAL
+namespace DAHangAnh.DAL
 {
     public class DBConnect
     {

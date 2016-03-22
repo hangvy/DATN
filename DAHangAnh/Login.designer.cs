@@ -1,4 +1,4 @@
-﻿namespace DATN1
+﻿namespace DAHangAnh
 {
     partial class Login
     {
