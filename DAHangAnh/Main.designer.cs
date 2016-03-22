@@ -49,7 +49,6 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.pbImageInput = new System.Windows.Forms.PictureBox();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panelEx1.SuspendLayout();
@@ -229,21 +228,9 @@
             this.pbImageInput.TabIndex = 0;
             this.pbImageInput.TabStop = false;
             // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(519, 28);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(75, 23);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 8;
-            this.buttonX1.Text = "buttonX1";
-            // 
             // Main
             // 
             this.ClientSize = new System.Drawing.Size(1184, 561);
-            this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.panelEx1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -284,6 +271,5 @@
         private DevComponents.DotNetBar.PanelEx panelEx1;
         private System.Windows.Forms.PictureBox pbImageInput;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }
