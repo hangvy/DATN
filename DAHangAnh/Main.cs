@@ -7,10 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
 using Google.Apis.Drive.v2;
-using DATN1.Ultilities;
 using Google.Apis.Drive.v2.Data;
-using DATN1.Ultil;
-using DAHangAnh.Ultilities;
+using DAHangAnh;
 
 namespace DAHangAnh
 {
@@ -64,7 +62,7 @@ namespace DAHangAnh
             folder.MimeType = "application/vnd.google-apps.folder";
 
             // service is an authorized Drive API service instance
-            File file = service.Files.Insert(folder).Execute();
+            //File file = service.Files.Insert(folder).Execute();
 
             OpenFileDialog ofdImageInput = new OpenFileDialog();
             ofdImageInput.Filter = "Image|*.*";
@@ -79,7 +77,7 @@ namespace DAHangAnh
            IList<File> _Files = ConnectGoogleDrive.GetFiles(service, Q);
          //   MessageBox.Show(_Files.Count.ToString());
             _Files.Add(ConnectGoogleDrive.createDirectory(service, "test", "DiamtoSample", "root"));
-            string directoryId = file.Id;
+           // string directoryId = file.Id;
           //  File newFile = ConnectGoogleDrive.uploadFile(service, fileUpload, directoryId);
             File newFile = ConnectGoogleDrive.uploadFile(service, fileUpload, "root");
             MessageBox.Show("upload " + fileUpload + " completed");
