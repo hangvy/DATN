@@ -22,5 +22,11 @@ namespace DAHangAnh.BLL
             var formDAL = new FormDAL();
             return formDAL.fnInsertForm(strConn,formE);
         }
+
+        public bool InsertImage(string strConn, ImageEntity imageE)
+        {
+            var formDAL = new FormDAL();
+            return formDAL.fnInsertImage(strConn, imageE);
+        }
     }
 }
