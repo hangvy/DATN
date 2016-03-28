@@ -29,12 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl = new DevComponents.DotNetBar.TabControl();
+            this.tabPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
+            this.cbbFolerList = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tabUploadForm = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabPanel2 = new DevComponents.DotNetBar.TabControlPanel();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.dtGrvForm = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.idForm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.formName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateCreatForm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserDecribe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnNextTab = new DevComponents.DotNetBar.ButtonX();
             this.btnDeleteForm = new DevComponents.DotNetBar.ButtonX();
             this.btnUpdateForm = new DevComponents.DotNetBar.ButtonX();
@@ -44,15 +54,10 @@
             this.txtFormName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtFormID = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.tabCreateForm = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabPanel1 = new DevComponents.DotNetBar.TabControlPanel();
-            this.tabUploadForm = new DevComponents.DotNetBar.TabItem(this.components);
-            this.idForm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.formName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateCreatForm = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UserDecribe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl)).BeginInit();
             this.tabControl.SuspendLayout();
+            this.tabPanel1.SuspendLayout();
+            this.panelEx2.SuspendLayout();
             this.tabPanel2.SuspendLayout();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGrvForm)).BeginInit();
@@ -63,8 +68,8 @@
             this.tabControl.CanReorderTabs = false;
             this.tabControl.CloseButtonPosition = DevComponents.DotNetBar.eTabCloseButtonPosition.Right;
             this.tabControl.ColorScheme.TabBackground = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(214)))), ((int)(((byte)(246)))));
-            this.tabControl.Controls.Add(this.tabPanel2);
             this.tabControl.Controls.Add(this.tabPanel1);
+            this.tabControl.Controls.Add(this.tabPanel2);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl.Location = new System.Drawing.Point(0, 0);
@@ -77,6 +82,75 @@
             this.tabControl.Tabs.Add(this.tabCreateForm);
             this.tabControl.Tabs.Add(this.tabUploadForm);
             this.tabControl.Text = "tabControl";
+            this.tabControl.Click += new System.EventHandler(this.tabControl_Click);
+            // 
+            // tabPanel1
+            // 
+            this.tabPanel1.Controls.Add(this.panelEx2);
+            this.tabPanel1.DisabledBackColor = System.Drawing.Color.Empty;
+            this.tabPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPanel1.Location = new System.Drawing.Point(0, 28);
+            this.tabPanel1.Name = "tabPanel1";
+            this.tabPanel1.Padding = new System.Windows.Forms.Padding(1);
+            this.tabPanel1.Size = new System.Drawing.Size(1284, 459);
+            this.tabPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabPanel1.Style.GradientAngle = 90;
+            this.tabPanel1.TabIndex = 9;
+            this.tabPanel1.TabItem = this.tabUploadForm;
+            // 
+            // panelEx2
+            // 
+            this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.cbbFolerList);
+            this.panelEx2.Controls.Add(this.comboBox1);
+            this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx2.Location = new System.Drawing.Point(1, 1);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(1282, 457);
+            this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx2.Style.GradientAngle = 90;
+            this.panelEx2.TabIndex = 0;
+            // 
+            // cbbFolerList
+            // 
+            this.cbbFolerList.FormattingEnabled = true;
+            this.cbbFolerList.Location = new System.Drawing.Point(165, 16);
+            this.cbbFolerList.Name = "cbbFolerList";
+            this.cbbFolerList.Size = new System.Drawing.Size(121, 25);
+            this.cbbFolerList.TabIndex = 1;
+            this.cbbFolerList.Text = "Chọn thư mục ";
+            this.cbbFolerList.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Tạo mới",
+            "Thêm ảnh"});
+            this.comboBox1.Location = new System.Drawing.Point(11, 16);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 25);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.Text = "Tạo mới";
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
+            // 
+            // tabUploadForm
+            // 
+            this.tabUploadForm.AttachedControl = this.tabPanel1;
+            this.tabUploadForm.Name = "tabUploadForm";
+            this.tabUploadForm.Text = "Upload Google Drive";
             // 
             // tabPanel2
             // 
@@ -155,20 +229,58 @@
             this.dateCreatForm,
             this.status,
             this.UserDecribe});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtGrvForm.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtGrvForm.DefaultCellStyle = dataGridViewCellStyle1;
             this.dtGrvForm.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dtGrvForm.Location = new System.Drawing.Point(198, 201);
             this.dtGrvForm.Name = "dtGrvForm";
             this.dtGrvForm.ReadOnly = true;
             this.dtGrvForm.Size = new System.Drawing.Size(893, 210);
             this.dtGrvForm.TabIndex = 26;
+            // 
+            // idForm
+            // 
+            this.idForm.DataPropertyName = "idForm";
+            this.idForm.HeaderText = "Mã Form";
+            this.idForm.Name = "idForm";
+            this.idForm.ReadOnly = true;
+            this.idForm.Width = 150;
+            // 
+            // formName
+            // 
+            this.formName.DataPropertyName = "formName";
+            this.formName.HeaderText = "Tên Form";
+            this.formName.Name = "formName";
+            this.formName.ReadOnly = true;
+            this.formName.Width = 200;
+            // 
+            // dateCreatForm
+            // 
+            this.dateCreatForm.HeaderText = "Ngày Tạo";
+            this.dateCreatForm.Name = "dateCreatForm";
+            this.dateCreatForm.ReadOnly = true;
+            this.dateCreatForm.Width = 150;
+            // 
+            // status
+            // 
+            this.status.HeaderText = "Trạng Thái";
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
+            this.status.Width = 150;
+            // 
+            // UserDecribe
+            // 
+            this.UserDecribe.DataPropertyName = "UserName";
+            this.UserDecribe.HeaderText = "Người Định Dạng";
+            this.UserDecribe.Name = "UserDecribe";
+            this.UserDecribe.ReadOnly = true;
+            this.UserDecribe.Width = 200;
             // 
             // btnNextTab
             // 
@@ -286,68 +398,6 @@
             this.tabCreateForm.Name = "tabCreateForm";
             this.tabCreateForm.Text = "Tạo Biểu Mẫu";
             // 
-            // tabPanel1
-            // 
-            this.tabPanel1.DisabledBackColor = System.Drawing.Color.Empty;
-            this.tabPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabPanel1.Location = new System.Drawing.Point(0, 28);
-            this.tabPanel1.Name = "tabPanel1";
-            this.tabPanel1.Padding = new System.Windows.Forms.Padding(1);
-            this.tabPanel1.Size = new System.Drawing.Size(1284, 459);
-            this.tabPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
-            this.tabPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
-            this.tabPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.tabPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
-            | DevComponents.DotNetBar.eBorderSide.Bottom)));
-            this.tabPanel1.Style.GradientAngle = 90;
-            this.tabPanel1.TabIndex = 9;
-            this.tabPanel1.TabItem = this.tabUploadForm;
-            // 
-            // tabUploadForm
-            // 
-            this.tabUploadForm.AttachedControl = this.tabPanel1;
-            this.tabUploadForm.Name = "tabUploadForm";
-            this.tabUploadForm.Text = "Upload Google Drive";
-            // 
-            // idForm
-            // 
-            this.idForm.DataPropertyName = "idForm";
-            this.idForm.HeaderText = "Mã Form";
-            this.idForm.Name = "idForm";
-            this.idForm.ReadOnly = true;
-            this.idForm.Width = 150;
-            // 
-            // formName
-            // 
-            this.formName.DataPropertyName = "formName";
-            this.formName.HeaderText = "Tên Form";
-            this.formName.Name = "formName";
-            this.formName.ReadOnly = true;
-            this.formName.Width = 200;
-            // 
-            // dateCreatForm
-            // 
-            this.dateCreatForm.HeaderText = "Ngày Tạo";
-            this.dateCreatForm.Name = "dateCreatForm";
-            this.dateCreatForm.ReadOnly = true;
-            this.dateCreatForm.Width = 150;
-            // 
-            // status
-            // 
-            this.status.HeaderText = "Trạng Thái";
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            this.status.Width = 150;
-            // 
-            // UserDecribe
-            // 
-            this.UserDecribe.DataPropertyName = "UserName";
-            this.UserDecribe.HeaderText = "Người Định Dạng";
-            this.UserDecribe.Name = "UserDecribe";
-            this.UserDecribe.ReadOnly = true;
-            this.UserDecribe.Width = 200;
-            // 
             // ManageImage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,6 +411,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabControl)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.tabControl.PerformLayout();
+            this.tabPanel1.ResumeLayout(false);
+            this.panelEx2.ResumeLayout(false);
             this.tabPanel2.ResumeLayout(false);
             this.panelEx1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtGrvForm)).EndInit();
@@ -391,5 +443,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dateCreatForm;
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserDecribe;
+        private DevComponents.DotNetBar.PanelEx panelEx2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbFolerList;
     }
 }
