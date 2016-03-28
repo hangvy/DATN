@@ -9,12 +9,11 @@ namespace DAHangAnh
 {
     public class SqlHelper
     {
-        public string strConn { get; set; }
+        public string strConn { get; set;}
         //get connection string get from file web.config
         public SqlHelper()
         {
             strConn = ConfigurationManager.ConnectionStrings["strConnection"].ConnectionString;
-            //hang
         }
     }
 }

@@ -42,17 +42,17 @@ namespace DAHangAnh
                 SqlParameter[] p = new SqlParameter[2];
                 p[0] = new SqlParameter("UserName", UserName);
                 p[1] = new SqlParameter("Password", Password);
-                dt = conn.ExecuteReaderParmarter("spCheckUserLogin", p);
-                userE.UserID = Convert.ToInt32(dt.Rows[0]["UserID"].ToString());
+                dt = conn.ExecuteReaderParmarter("spCheckLogin", p);
                 userE.UserName = dt.Rows[0]["UserName"].ToString();
                 userE.Password = dt.Rows[0]["Password"].ToString();
-                userE.PhoneNumber = dt.Rows[0]["PhonNumber"].ToString();
                 userE.FullName = dt.Rows[0]["FullName"].ToString();
+                userE.PhoneNumber = dt.Rows[0]["PhoneNumber"].ToString();
                 userE.Role = dt.Rows[0]["Role"].ToString();
                 return userE;
             }
             catch
             {
+                return null;
                 throw;
             }
             finally
@@ -70,7 +70,6 @@ namespace DAHangAnh
                 SqlParameter[] p = new SqlParameter[1];
                 p[0] = new SqlParameter("@UserID", UserID);
                 dt = conn.ExecuteReaderParmarter("spGetUserByID", p);
-                userE.UserID = UserID;
                 userE.UserName = dt.Rows[0]["UserName"].ToString();
                 userE.Password = dt.Rows[0]["Password"].ToString();
                 userE.PhoneNumber = dt.Rows[0]["PhoneNumber"].ToString();
@@ -100,7 +99,6 @@ namespace DAHangAnh
                 p[0] = new SqlParameter("@UserName", UserName);
                 dt = conn.ExecuteReaderParmarter("spGetUserByUserName", p);
                 userE.UserName = UserName;
-                userE.UserID = Convert.ToInt32(dt.Rows[0]["UserID"]);
                 userE.Password = dt.Rows[0]["Password"].ToString();
                 userE.PhoneNumber = dt.Rows[0]["PhoneNumber"].ToString();
                 userE.FullName = dt.Rows[0]["FullName"].ToString();
@@ -129,7 +127,6 @@ namespace DAHangAnh
                 p[0] = new SqlParameter("@UserName", UserName);
                 dt = conn.ExecuteReaderParmarter("spGetUserByUserName", p);
                 userE.UserName = UserName;
-                userE.UserID = Convert.ToInt32(dt.Rows[0]["UserID"]);
                 userE.Password = dt.Rows[0]["Password"].ToString();
                 userE.PhoneNumber = dt.Rows[0]["PhoneNumber"].ToString();
                 userE.FullName = dt.Rows[0]["FullName"].ToString();
@@ -179,12 +176,11 @@ namespace DAHangAnh
             try
             {
                 SqlParameter[] p = new SqlParameter[6];
-                p[0] = new SqlParameter("@UserID", userEntity.UserID);
-                p[1] = new SqlParameter("@UserName", userEntity.UserName);
-                p[2] = new SqlParameter("@Password", userEntity.Password);
-                p[3] = new SqlParameter("@FullName", userEntity.FullName);
-                p[4] = new SqlParameter("@PhoneNumber", userEntity.PhoneNumber);
-                p[5] = new SqlParameter("@Role", userEntity.Role);
+                p[0] = new SqlParameter("@UserName", userEntity.UserName);
+                p[1] = new SqlParameter("@Password", userEntity.Password);
+                p[2] = new SqlParameter("@FullName", userEntity.FullName);
+                p[3] = new SqlParameter("@PhoneNumber", userEntity.PhoneNumber);
+                p[4] = new SqlParameter("@Role", userEntity.Role);
                 conn.ExecuteNonQueryParmarter("spUpdateUser", p);
                 return true;
             }

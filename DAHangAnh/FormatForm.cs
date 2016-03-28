@@ -12,7 +12,7 @@ using DAHangAnh.DAL;
 using DAHangAnh.BLL;
 namespace DAHangAnh
 {
-    public partial class FormatForm : Form
+    public partial class FormatForm : DevComponents.DotNetBar.Office2007Form
     {
         public FormatForm()
         {
@@ -26,18 +26,13 @@ namespace DAHangAnh
             grvDetailForm.DataSource = detailFormBLL.GetListDetailForm(sqlHelper.strConn);
             //grvDetailForm.DataBindings;
         }
-
-        public void LoadCombox()
-        {
-            cbListForm.DataSource = formBLL.GetListForm(sqlHelper.strConn);
-            cbListForm.DisplayMember = "idForm";
-            cbListForm.ValueMember = "formName";
-        }
         private void FormatForm_Load(object sender, EventArgs e)
         {
-            //grvDetailForm.Rows.Add(1, "Mã sinh viên", 100, 100, 200, 50);
-            LoadCombox();
-            LoadDataGridView();
+        }
+
+        private void btnCreatField_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

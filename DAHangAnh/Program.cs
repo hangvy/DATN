@@ -17,7 +17,32 @@ namespace DAHangAnh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new Login());
+            if (Session.userSession != null)
+            {
+                if (Session.userSession.Role.Equals(Constants.ROLEADMIN))
+                {
+                    Application.Run(new ManageUser());
+                }
+                else
+                {
+                    if (Session.userSession.Role.Equals(Constants.ROLEFormDecription))
+                    {
+                        Application.Run(new ManageFrom());
+                    }
+                    else
+                    {
+                        if (Session.userSession.Role.Equals(Constants.ROLEImageManagement))
+                        {
+                            Application.Run(new ManageImage());
+                        }
+                        else
+                        {
+                            Application.Run(new ManageFrom());
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -10,6 +10,8 @@ namespace DAHangAnh.DAL.Entities
     {
         public string formID { get; set; }
         public string formName { get; set; }
+        public string processDate { get; set; }
+        public int status { get; set; }
         public string userName { get; set; }
     }
 }

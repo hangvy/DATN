@@ -32,16 +32,18 @@ namespace DAHangAnh.DAL
         }
 
 
-        // Inssert  a form
+         // Inssert  a form
         public bool fnInsertForm(string strConn, FormEntity formE)
         {
             var conn = new DBConnect(strConn);
             try
             {
-                SqlParameter[] p = new SqlParameter[3];
+                SqlParameter[] p = new SqlParameter[5];
                 p[0] = new SqlParameter("@idForm", formE.formID);
                 p[1] = new SqlParameter("@formName",formE.formName);
-                p[2] = new SqlParameter("@UserName", formE.userName);
+                p[2] = new SqlParameter("@userName", formE.userName);
+                p[3] = new SqlParameter("@processDate", Convert.ToDateTime(formE.processDate));
+                p[4] = new SqlParameter("@status", formE.status);
                 conn.ExecuteNonQueryParmarter("spInsertForm", p);
                 return true;
             }
