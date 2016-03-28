@@ -78,5 +78,31 @@ namespace DAHangAnh.DAL
                 conn.CloseConnection();
             }
         }
+
+        public bool fnInsertImage(string strConn, ImageEntity imageE)
+        {
+            var conn = new DBConnect(strConn);
+            try
+            {
+                SqlParameter[] p = new SqlParameter[6];
+                p[0] = new SqlParameter("@imgName", imageE.ImgName);
+                p[1] = new SqlParameter("@imgPath", imageE.ImgPath);
+                p[2] = new SqlParameter("@status", imageE.Status);
+                p[3] = new SqlParameter("@userName", imageE.UserName);
+                p[4] = new SqlParameter("@upTime", imageE.UpTime);
+                p[5] = new SqlParameter("@idForm", imageE.IdForm);
+                conn.ExecuteNonQueryParmarter("spInsertImage", p);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+                throw ex;
+            }
+            finally
+            {
+                conn.CloseConnection();
+            }
+        }
     }
 }
